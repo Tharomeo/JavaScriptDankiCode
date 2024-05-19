@@ -1,0 +1,48 @@
+<html>
+    <body>
+        <script>
+            // var = variavel global 
+            // let = variavel no escopo
+            // const = constante 
+
+//Escolha um dos programas abaixo para testar
+//Rodar todos como esta agora resultara em erro
+
+//---------------------------------------------------------------------------
+
+            var nome = "Guilherme" //primeira declaração da variavel var
+
+            nome = 'joão'  //alteração da variavel
+
+            {
+                let idade = 27 //variavel que funciona apenas dentro das chaves (escopo)
+               console.log(idade, nome) //variavel let do escopo + variavel var global
+            }
+
+            console.log(nome)
+
+//---------------------------------------------------------------------------
+
+            const nome = 'Guilherme' 
+            //caso tente alterar a variavel o programa exibe um erro
+            console.log(nome)
+
+//---------------------------------------------------------------------------
+
+            var numero = 27 
+
+            var nome = 'Guilherme'
+            var nome2 = ' João'
+
+            var outraVariavel = true //boolean
+
+            var texto = 'O nome é ' + nome
+            //variavel nome tem que ser inserida antes pois o codigo é lido de cima para baixo
+
+            console.log(texto)
+
+//---------------------------------------------------------------------------
+
+        </script>
+    </body>
+</html>
