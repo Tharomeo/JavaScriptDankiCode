@@ -1,0 +1,37 @@
+<html>
+    <body>
+        <script>
+            var num1 = prompt('Informe o primeiro numero')
+            var sinal = prompt('Qual o sinal da operação')
+            var num2 = prompt('Qual o segundo numero? ')
+            
+            while(sinal != '-' && sinal != '+' && sinal != '/' && sinal != '*'){
+                alert ('Insire um dos seguintes sinais + - / *')
+                var sinal = prompt('Qual o sinal da operação')
+            }
+
+            //parseInt transforma função em numero
+            //num1 = parseInt(num1)
+            //num1 = parseInt(num1)
+
+            var resultado = 0
+            if(sinal == '+'){
+                resultado = num1 + num2
+            }
+
+            else if(sinal == '-'){
+                resultado = num1 - num2
+            }
+
+            else if(sinal == '/'){
+                resultado = num1 / num2
+            }
+
+            else if(sinal == '*'){
+                resultado = num1 * num2
+            }
+
+            alert('Resultado é ' + resultado)
+        </script>
+    </body>
+</html>

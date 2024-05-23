@@ -2,6 +2,12 @@
     <body>
         <script>
             var anoNascimento = prompt('Qual o ano do seu nascimento?')
+
+            while(anoNascimento >= 2024){
+                alert('Insira um ano valido')
+                var anoNascimento = prompt('Qual o ano do seu nascimento?')
+            }
+
             var anoAtual = prompt('Que ano estamos?')
 
             var idadeFinal = anoAtual - anoNascimento
